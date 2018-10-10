@@ -27,6 +27,7 @@ const data = [
 
 
 const profiles = profileIterator(data);
+
 //Call first profile
 nextProfile();
 
@@ -55,10 +56,8 @@ function nextProfile () {
 }
 
 //Profile iterator
-
 function profileIterator(profiles) {
   let nextIndex = 0;
-
 
   return {
     next: function() {
