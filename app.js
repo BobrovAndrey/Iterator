@@ -45,7 +45,7 @@ function nextProfile () {
         <li class="list-group-item">Preference: ${currentProfile.gender} looking for ${currentProfile.lookingfor}</li>
       </ul>`
 
-      document.getElementById('imageDisplay').innerHTML=`<img src="${currentProfile.image}">`
+      document.getElementById('imageDisplay').innerHTML = `<img src="${currentProfile.image}">`
     }else{
       //No more profiles
       alert ('We have no more users!');
@@ -56,12 +56,12 @@ function nextProfile () {
 
 //Profile iterator
 
-function profileIterator(profiles){
+function profileIterator(profiles) {
   let nextIndex = 0;
 
 
   return {
-    next: function(){
+    next: function() {
       return nextIndex< profiles.length ? 
       {value: profiles[nextIndex++], done: false} : 
       {done: true}
